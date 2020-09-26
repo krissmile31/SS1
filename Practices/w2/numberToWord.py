@@ -67,7 +67,7 @@ def readNumber(number):
     #the next 3 number after 2 above case
     for i in range(qu):
         #i= 0...qu, read the next 3 number, its class decrease to 1 after each case
-        number_string += ' ' + read3([number[(i*qu+mod)], number[(i*qu+mod)+1], number[(i*qu+mod)+2]]) + ' ' + numberClass[cp-1]
+        number_string += ' ' + read3([number[(i*3+mod)], number[(i*3+mod)+1], number[(i*3+mod)+2]]) + ' ' + numberClass[cp-1]
         cp -= 1
     return number_string
 
